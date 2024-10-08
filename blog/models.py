@@ -2,10 +2,8 @@ from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 from django.templatetags.static import static
-from django.utils.text import slugify
 
 
-# Create your models here.
 CATEGORY_CHOICES = (
     ('fiction', 'Fiction'),
     ('non_fiction', 'Non-Fiction'),
@@ -15,7 +13,7 @@ CATEGORY_CHOICES = (
     ('history', 'History'),
     ('science', 'Science'),
     ('romance', 'Romance'),
-    ('others', 'Others'),  # Added the "others" category
+    ('others', 'Others'),
 )
 
 class Post(models.Model):
@@ -50,4 +48,13 @@ class Comment(models.Model):
         return f"Comment by {self.author} on {self.post}"
 
     class Meta:
-        ordering = ['-created_on']  # Latest comments first
+        ordering = ['-created_on']
+
+
+class Profile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    profile_picture = CloudinaryField('image', blank=True, null=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f'{self.user.username}\'s Profile'

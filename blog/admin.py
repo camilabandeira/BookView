@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post, Comment
+from .models import Post, Comment, Profile
 
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
@@ -8,6 +8,7 @@ class PostAdmin(admin.ModelAdmin):
     search_fields = ('title', 'content')
     prepopulated_fields = {'slug': ('title',)}
     ordering = ['-created_on']
+
 
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
@@ -18,3 +19,9 @@ class CommentAdmin(admin.ModelAdmin):
 
     def approve_comments(self, request, queryset):
         queryset.update(approved=True)
+
+
+@admin.register(Profile)
+class ProfileAdmin(admin.ModelAdmin):
+    list_display = ('user', 'created_at')
+    search_fields = ('user__username',)
