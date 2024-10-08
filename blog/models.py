@@ -1,6 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
+from django.templatetags.static import static
+from django.utils.text import slugify
 
 
 # Create your models here.
@@ -13,6 +15,7 @@ CATEGORY_CHOICES = (
     ('history', 'History'),
     ('science', 'Science'),
     ('romance', 'Romance'),
+    ('others', 'Others'),  # Added the "others" category
 )
 
 class Post(models.Model):
@@ -27,3 +30,6 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+    def get_post_image(self):
+        return self.cover_image.url if self.cover_image else static('images/default-post-image.svg')
