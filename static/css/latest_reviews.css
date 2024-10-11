@@ -1,0 +1,97 @@
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.review-content {
+    max-height: 100px;
+    overflow: hidden;
+}
+
+.latest_review {
+    padding: 2rem 2rem 5rem !important;
+}
+
+.latest_title-section {
+    font-weight: 900;
+}
+
+.latest_review-wrapper {
+    width: 100%;
+    margin: 2rem 0 4rem 0;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.container-fluid {
+    background-color: var(--color-neutral-gray);
+    padding: 0;
+    margin: 0;
+}
+
+.card-title,
+.card-text,
+.review-content {
+    font-family: "Source Serif 4", serif;
+}
+
+.card-title {
+    font-size: 1.1875rem;
+    font-weight: 800;
+}
+
+.card-text {
+    font-size: 0.9375rem;
+    font-weight: 300;
+    color: var(--color-light-gray);
+}
+
+.review-content {
+    margin-top: -0.625rem;
+}
+
+.read_full-post {
+    background-color: var(--color-dark-charcoal);
+    color: var(--color-off-white);
+}
+
+.latest_reviews-pagination {
+    justify-content: center;
+    margin-top: -4rem;
+}
+
+.pagination {
+    padding-bottom: 1.25rem;
+}
+
+.pagination,
+.page-item a,
+.page-link {
+    color: var(--color-dark-charcoal);
+}
+
+.page-item a:hover {
+    color: var(--color-deep-purple);
+}
+
+.page-item a:focus {
+    color: var(--color-dark-charcoal);
+}
+
+@media (max-width: 768px),
+(min-width: 769px) and (max-width: 1180px) {
+    .latest_review-wrapper {
+        padding: 0;
+    }
+
+    .card-title {
+        font-size: 1.0625rem;
+        justify-content: center;
+
+    }
+}
