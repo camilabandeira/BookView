@@ -67,6 +67,10 @@ body {
     color: var(--color-deep-purple);
 }
 
+.login-desktop {
+    font-weight: 900;
+}
+
 /* -- Sign-Up button styles -- */
 .btn-signup {
     background-color: var(--color-dark-charcoal);
