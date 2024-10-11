@@ -49,6 +49,7 @@ body {
 
 .navbar {
     background-color: var(--color-neutral-gray);
+    padding: 1rem 0;
 }
 
 .navbar-title {
