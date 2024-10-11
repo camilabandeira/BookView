@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Security Configuration
 SECRET_KEY = config('SECRET_KEY') 
-DEBUG = False 
+DEBUG = True 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.herokuapp.com']
 
 # Installed Apps
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'blog',  
     'cloudinary',  
     'cloudinary_storage',  
+    'whitenoise',
 ]
 
 # Cloudinary Configuration for Media Files
@@ -106,12 +107,16 @@ USE_I18N = True
 USE_TZ = True
 
 # Static Files Configuration
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+]
+
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),  
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'  
 
 # Default Auto Field
