@@ -48,7 +48,6 @@ body {
 }
 
 .navbar {
-    padding: 0.5rem 15rem;
     background-color: var(--color-neutral-gray);
 }
 
@@ -129,11 +128,6 @@ footer {
 /* -- Tablet styles (768px to 1024px) -- */
 @media (min-width: 768px) and (max-width: 1024px) {
 
-    .navbar {
-        justify-content: center;
-        padding-left: 0;
-        padding-right: 0;
-    }
 
     .navbar-title {
         margin-right: auto;
