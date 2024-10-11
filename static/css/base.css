@@ -127,7 +127,10 @@ footer {
     align-items: center;
     background-color: var(--color-neutral-gray);
     height: 6rem;
+}
 
+footer p {
+    text-align: center;
 }
 
 /* -- Tablet styles (768px to 1024px) -- */
