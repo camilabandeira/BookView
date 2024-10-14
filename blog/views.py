@@ -24,3 +24,6 @@ def reviews_page(request):
 
     return render(request, 'blog/reviews_page.html', {'page_obj': page_obj})
 
+def about_page(request):
+    return render(request, 'blog/about_page.html')
+
