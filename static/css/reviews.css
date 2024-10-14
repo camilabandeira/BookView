@@ -1,10 +1,27 @@
-.card-img-top {
-    object-fit: cover;
-    height: 200px;
+.reviews-wrapper {
+    background-color: var(--color-neutral-gray);
+
 }
 
-.card {
-    margin-bottom: 20px;
+.card-img-top {
+    object-fit: cover;
+    height: 12.5rem;
+}
+
+.latest_review-card {
+    height: 460px;
+    width: 94%;
+    margin: 0 auto;
+    margin-bottom: 5.625rem
+}
+
+.latest_review-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 3rem;
+    margin-bottom: 1rem;
+    gap: 1;
 }
 
 .review-content {
@@ -18,14 +35,7 @@
 
 .latest_title-section {
     font-weight: 900;
-}
-
-.latest_review-wrapper {
-    width: 100%;
-    margin: 2rem 0 4rem 0;
-    margin-bottom: 1rem;
-    display: flex;
-    justify-content: center;
+    padding: 2rem;
 }
 
 .container-fluid {
@@ -61,18 +71,25 @@
 }
 
 .latest_reviews-pagination {
+    display: flex;
     justify-content: center;
     margin-top: -4rem;
 }
 
 .pagination {
-    padding-bottom: 1.25rem;
+    padding-bottom: 3.25rem;
 }
 
 .pagination,
 .page-item a,
 .page-link {
     color: var(--color-dark-charcoal);
+}
+
+.active>.page-link,
+.page-link.active {
+    background-color: var(--color-dark-charcoal);
+    border-color: var(--color-dark-charcoal);
 }
 
 .page-item a:hover {
@@ -82,6 +99,7 @@
 .page-item a:focus {
     color: var(--color-dark-charcoal);
 }
+
 
 @media (max-width: 768px),
 (min-width: 769px) and (max-width: 1180px) {
