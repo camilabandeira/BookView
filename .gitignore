@@ -8,4 +8,4 @@ venv/
 
 # Ignore other OS files (MacOS-specific)
 .DS_Store
-/staticfiles/
+
