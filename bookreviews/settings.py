@@ -16,22 +16,6 @@ import dj_database_url
 from dotenv import load_dotenv
 import os
 
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'handlers': {
-        'console': {
-            'class': 'logging.StreamHandler',
-        },
-    },
-    'root': {
-        'handlers': ['console'],
-        'level': 'ERROR',
-    },
-}
-
-
-
 # Load environment variables from .env file
 load_dotenv()
 
@@ -40,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Security Configuration
 SECRET_KEY = config('SECRET_KEY') 
-DEBUG = False 
+DEBUG = True 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'bookview-1fe2bb34917a.herokuapp.com']
 
 CSRF_TRUSTED_ORIGINS = [
@@ -135,7 +119,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),  
 ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'  
 
 LOGIN_REDIRECT_URL = 'profile' 
