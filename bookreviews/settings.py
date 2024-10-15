@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Security Configuration
 SECRET_KEY = config('SECRET_KEY') 
-DEBUG = True 
+DEBUG = False 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.herokuapp.com']
 
 # Installed Apps
@@ -118,6 +118,10 @@ STATICFILES_DIRS = [
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'  
+
+LOGIN_REDIRECT_URL = 'profile' 
+LOGIN_URL = 'homepage' 
+LOGOUT_REDIRECT_URL = 'homepage'
 
 # Default Auto Field
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
