@@ -1,0 +1,81 @@
+/* Dark theme background */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--color-light-gray);
+}
+
+/* Card container for the registration form */
+.register-card {
+    padding: 2rem;
+    border-radius: 10px;
+    width: 60%;
+}
+
+/* Heading styles */
+.register-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    margin: auto 0;
+}
+
+.register-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Form group styling */
+.register-form-group {
+    margin-bottom: 1rem;
+}
+
+.register-form-group label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+}
+
+/* Input field styles */
+.register-form-control {
+    width: 100%;
+    padding: 0.7rem;
+    /* color: var(--color-light-gray); */
+    border: 1px solid #ececec;
+    border-radius: 5px;
+}
+
+.register-form-control:focus {
+    outline: none;
+}
+
+/* Submit button */
+.register-btn {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--color-dark-charcoal);
+    color: var(--color-light-gray);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.register-btn:hover {
+    background-color: #444;
+}
+
+@media (max-width: 768px) {
+    .register-card {
+        width: 90%;
+        padding: 0;
+    }
+}
