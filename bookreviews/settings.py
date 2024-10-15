@@ -16,6 +16,22 @@ import dj_database_url
 from dotenv import load_dotenv
 import os
 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'root': {
+        'handlers': ['console'],
+        'level': 'ERROR',
+    },
+}
+
+
+
 # Load environment variables from .env file
 load_dotenv()
 
