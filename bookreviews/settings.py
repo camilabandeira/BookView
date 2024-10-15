@@ -27,7 +27,9 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = False 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'bookview-1fe2bb34917a.herokuapp.com']
 
-
+CSRF_TRUSTED_ORIGINS = [
+    'https://bookview-1fe2bb34917a.herokuapp.com', 
+]
 # Installed Apps
 INSTALLED_APPS = [
     'django.contrib.admin',
