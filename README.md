@@ -8,6 +8,40 @@
   <a href="https://bookview-1fe2bb34917a.herokuapp.com/"><strong>Live Project</strong></a>
 </div>
 
+
+## Table of Contents
+
+1. [BookView - Code Institute Project 4](#bookview---code-institute-project-4)
+2. [User Experience (UX)](#user-experience-ux)
+   - [User Stories](#user-stories)
+     - [Site Owner Goals](#site-owner-goals)
+     - [User Goals](#user-goals)
+   - [Color Scheme](#color-scheme)
+   - [Typography](#typography)
+   - [Wireframes](#wireframes)
+   - [Entity-Relationship Diagram (ERD)](#entity-relationship-diagram-erd)
+3. [Agile Methodology](#agile-methodology)
+4. [Features](#features)
+   - [Homepage](#homepage)
+   - [My Reviews Page](#my-reviews-page)
+   - [Login Page](#login-page)
+   - [Sign-Up Page](#sign-up-page)
+   - [Post Review Page](#post-review-page)
+   - [Profile Page](#profile-page)
+     - [Profile Page (Logged In)](#profile-page-logged-in)
+     - [Update Profile Page](#update-profile-page)
+   - [Write a Review Page](#write-a-review-page)
+   - [About Page](#about-page)
+5. [Technologies](#technologies)
+   - [Programming Languages](#programming-languages)
+   - [Applications and Libraries](#applications-and-libraries)
+6. [Deployment & Local Development](#deployment--local-development)
+   - [Local Development](#local-development)
+   - [Deployment](#deployment)
+7. [Credits](#credits)
+
+
+
 # User Experience (UX)
 
 BookView is designed with simplicity and community engagement in mind, providing an intuitive and enjoyable experience for book lovers. Here's an overview of the key features and user journey on the platform:
@@ -185,10 +219,6 @@ The **My Reviews Page** allows logged-in users to view all the posts they have w
   - Provides easy access to **Home**, **My Reviews**, **Reviews**, and **About** sections.
   - Includes a **Write a Review** button and a **Logout** button for managing account access.
 
-- **Footer**: 
-This page helps users manage their posted reviews and provides options for creating new reviews or editing/deleting existing ones.
-
-
 ---
 
 ### Login Page
@@ -289,3 +319,145 @@ The **About Page** introduces **BookView** and its purpose, welcoming users to t
 
 - **Welcome Message**: A brief description of the platform’s mission, inviting book lovers to join the community, share reviews, and discuss their favorite books.
 - **Call to Action**: Encourages users to sign up and participate in discussions about literature.
+
+
+## Technologies
+
+### Programming Languages
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+- [Python](<https://en.wikipedia.org/wiki/Python_(programming_language)>)
+
+### Applications and Libraries
+
+- [Visual Studio Code](https://code.visualstudio.com/)  
+  My go-to code editor—lightweight, flexible, and packed with useful extensions that make development a breeze.
+
+- [Django](https://www.djangoproject.com/)  
+  A robust web framework that handles all the heavy lifting, letting me focus on building features rather than reinventing the wheel.
+
+- [PostgreSQL](https://www.postgresql.org/)  
+  My reliable database of choice—fast, powerful, and able to handle all the data my app throws at it.
+
+- [Git](https://git-scm.com/)  
+  Essential for version control—helps me track changes, collaborate, and avoid the dreaded "lost code" nightmare.
+
+- [Figma](https://www.figma.com/)  
+  Perfect for designing and prototyping visually before diving into code. It keeps my UI ideas clear and structured.
+
+- [Heroku](https://heroku.com/)  
+  A user-friendly platform to deploy my project without the hassle of managing servers—just push, and it’s live.
+
+- [DrawSQL](https://drawsql.app/)  
+  My go-to for visualizing database structures—makes it easy to map out relationships and see how everything fits together.
+
+
+
+## Deployment & Local Development
+
+### Local Development
+
+To set up the project locally, follow these steps:
+
+1. **Clone the Repository**:  
+   First, clone the project to your local machine using Git:
+   ```bash
+   git clone https://github.com/your-username/your-repo.git
+   cd your-repo
+   ```
+
+2. **Create a Virtual Environment**:  
+   Set up a virtual environment to isolate project dependencies:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+   ```
+
+3. **Install Dependencies**:  
+   Install the required dependencies from the `requirements.txt` file:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Set Up the Database**:  
+   Run migrations to set up the local PostgreSQL database:
+   ```bash
+   python manage.py migrate
+   ```
+
+5. **Create a Superuser**:  
+   Create an admin user for your local instance:
+   ```bash
+   python manage.py createsuperuser
+   ```
+
+6. **Run the Development Server**:  
+   Start the development server to view the project locally:
+   ```bash
+   python manage.py runserver
+   ```
+
+### Deployment
+
+The project is deployed using **Heroku**. Here's how you can deploy it:
+
+1. **Set Up Heroku**:  
+   Install the Heroku CLI and log in:
+   ```bash
+   heroku login
+   ```
+
+2. **Create a Heroku App**:  
+   Create a new app on Heroku:
+   ```bash
+   heroku create your-app-name
+   ```
+
+3. **Set Environment Variables**:  
+   Configure environment variables such as `SECRET_KEY`, `DATABASE_URL`, etc. using Heroku’s CLI:
+   ```bash
+   heroku config:set SECRET_KEY=your-secret-key
+   ```
+
+4. **Deploy to Heroku**:  
+   Push your code to Heroku:
+   ```bash
+   git push heroku main
+   ```
+
+5. **Migrate the Database**:  
+   Run migrations on the Heroku database:
+   ```bash
+   heroku run python manage.py migrate
+   ```
+
+6. **Create a Superuser on Heroku**:  
+   Create a superuser for your Heroku app:
+   ```bash
+   heroku run python manage.py createsuperuser
+   ```
+
+7. **Access the Live Site**:  
+   Once the deployment is complete, visit your Heroku app at:
+   ```bash
+   https://your-app-name.herokuapp.com/
+   ```
+
+This section provides clear instructions for setting up the project locally and deploying it to Heroku.
+
+
+## Credits
+
+- **Favicon**:  
+  The book icon used as the favicon was sourced from [Icons8](https://icons8.com/icons/set/book).
+
+- **Hamburger Menu Tutorial**:  
+  The responsive hamburger menu design was implemented following this helpful [YouTube tutorial](https://www.youtube.com/watch?v=flItyHiDm7E).
+
+- **SVG to WebP Converter**:  
+  SVG images were converted to WebP format using [CloudConvert](https://cloudconvert.com/svg-to-webp).
+
+- **Code Institute's "I Think Therefore I Blog" Project**:  
+  This project was inspired by Code Institute’s **"I Think Therefore I Blog"** walkthrough from the **Developing with Django** module, which provided a foundation for creating the blog functionality in this app.
