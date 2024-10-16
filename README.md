@@ -461,4 +461,4 @@ This section provides clear instructions for setting up the project locally and 
 - **Code Institute's "I Think Therefore I Blog" Project**:  
   This project was inspired by Code Institute’s **"I Think Therefore I Blog"** walkthrough from the **Developing with Django** module, which provided a foundation for creating the blog functionality in this app.
 - **ChatGPT**:  
-  I used **ChatGPT** to help generate content for posts and blog entries
+  I used **ChatGPT** to help me write and generate content for the blog posts. It made the process quicker and easier by providing ideas and keeping the tone consistent, which let me focus more on building the platform itself. ChatGPT really helped take the pressure off when it came to writing, and made sure everything flowed smoothly.
