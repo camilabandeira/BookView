@@ -11,8 +11,7 @@
 
 ## Table of Contents
 
-1. [BookView - Code Institute Project 4](#bookview---code-institute-project-4)
-2. [User Experience (UX)](#user-experience-ux)
+1. [User Experience (UX)](#user-experience-ux)
    - [User Stories](#user-stories)
      - [Site Owner Goals](#site-owner-goals)
      - [User Goals](#user-goals)
@@ -20,8 +19,8 @@
    - [Typography](#typography)
    - [Wireframes](#wireframes)
    - [Entity-Relationship Diagram (ERD)](#entity-relationship-diagram-erd)
-3. [Agile Methodology](#agile-methodology)
-4. [Features](#features)
+2. [Agile Methodology](#agile-methodology)
+3. [Features](#features)
    - [Homepage](#homepage)
    - [My Reviews Page](#my-reviews-page)
    - [Login Page](#login-page)
@@ -32,13 +31,13 @@
      - [Update Profile Page](#update-profile-page)
    - [Write a Review Page](#write-a-review-page)
    - [About Page](#about-page)
-5. [Technologies](#technologies)
+4. [Technologies](#technologies)
    - [Programming Languages](#programming-languages)
    - [Applications and Libraries](#applications-and-libraries)
-6. [Deployment & Local Development](#deployment--local-development)
+5. [Deployment & Local Development](#deployment--local-development)
    - [Local Development](#local-development)
    - [Deployment](#deployment)
-7. [Credits](#credits)
+6. [Credits](#credits)
 
 
 
@@ -461,3 +460,5 @@ This section provides clear instructions for setting up the project locally and 
 
 - **Code Institute's "I Think Therefore I Blog" Project**:  
   This project was inspired by Code Institute’s **"I Think Therefore I Blog"** walkthrough from the **Developing with Django** module, which provided a foundation for creating the blog functionality in this app.
+- **ChatGPT**:  
+  I used **ChatGPT** to help generate content for posts and blog entries
