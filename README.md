@@ -93,3 +93,10 @@ For designing the wireframes of this project, I chose **Figma** due to its power
 - **Cloud-based**: Access the wireframes from anywhere, without worrying about software installation.
 
 You can view the project wireframes or contribute to the design directly in my [Figma project](https://www.figma.com/design/rzCnEerXNQuigsn4g0sbp4/Untitled?node-id=1-2&node-type=frame).
+
+#### Entity-Relationship Diagram (ERD)
+![](https://github.com/user-attachments/assets/cf53a6b9-00d5-4968-a74b-3b5d90f91f54)
+
+
+
+To design and visualize the Entity-Relationship Diagram (ERD) for this project, we chose **drawSQL** due to its user-friendly interface and powerful features. 
