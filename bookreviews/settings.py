@@ -30,6 +30,10 @@ ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'bookview-1fe2bb34917a.herokuapp.com'
 CSRF_TRUSTED_ORIGINS = [
     'https://bookview-1fe2bb34917a.herokuapp.com', 
 ]
+
+X_FRAME_OPTIONS = 'ALLOWALL'
+
+
 # Installed Apps
 INSTALLED_APPS = [
     'django.contrib.admin',
