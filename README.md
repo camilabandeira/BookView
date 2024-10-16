@@ -95,8 +95,197 @@ For designing the wireframes of this project, I chose **Figma** due to its power
 You can view the project wireframes or contribute to the design directly in my [Figma project](https://www.figma.com/design/rzCnEerXNQuigsn4g0sbp4/Untitled?node-id=1-2&node-type=frame).
 
 #### Entity-Relationship Diagram (ERD)
-![](https://github.com/user-attachments/assets/cf53a6b9-00d5-4968-a74b-3b5d90f91f54)
+![Entity-Relationship Diagram](https://github.com/user-attachments/assets/cf53a6b9-00d5-4968-a74b-3b5d90f91f54)
 
 
 
-To design and visualize the Entity-Relationship Diagram (ERD) for this project, we chose **drawSQL** due to its user-friendly interface and powerful features. 
+To design and visualize the Entity-Relationship Diagram (ERD) for this project, I chose **drawSQL** due to its user-friendly interface and powerful features. 
+
+
+## Agile Methodology
+
+I use Agile methodology with a Kanban board to visually track progress. Each user story breaks the project into manageable tasks, which are prioritized in the User Story List.
+
+To prioritize, I apply the MoSCoW method (Must-Have, Should-Have, Could-Have, Won’t-Have), ensuring critical features are done first. Each story also has clear Acceptance Criteria to confirm when it's complete and functioning correctly.
+
+![Agile User Stories Screenshot](https://github.com/user-attachments/assets/67a37df2-c2a1-4fd4-8fcf-b7fb326ec0ab)
+![MoSCoW Prioritization Screenshot](https://github.com/user-attachments/assets/a245feb7-5093-4dde-8dd1-32c3d3b39dce)
+
+
+## Features
+
+### Homepage
+
+The homepage offers a range of features designed to provide users with an intuitive and engaging experience. Below is a breakdown of the key features in the order users would naturally encounter them:
+
+#### 1. **Navigation Bar**
+   - A fixed top navigation bar with easy access to core sections of the website: **Home**, **Reviews**, and **About**.
+   - A **Search bar** is available to quickly search for reviews or books.
+   - **Login** and **Sign-Up** buttons are prominently displayed in the top-right corner for user authentication and new user registration.
+
+#### 2. **Homepage Banner**
+   - A large, visually engaging banner welcomes users to "Read, Review, and Reflect."
+   - Includes a **Call-to-Action button** labeled **Join the Club**, encouraging users to become a part of the community.
+
+#### 3. **Latest Reviews Section**
+   - This section highlights the **latest book reviews** from the community.
+   - Each review card features:
+     - **Book Title** and cover image.
+     - **Author Information** and publication date.
+     - A **short snippet** of the review content.
+     - A **"Read full post"** button to view the full review details.
+
+#### 4. **Call to Action (Sign-Up Prompt)**
+   - Located near the bottom of the homepage, this section invites users to **Sign Up**.
+   - It emphasizes community building, encouraging users to share their passion for books with like-minded readers.
+
+#### 5. **Footer**
+   - Contains copyright information and credits to the platform creator.
+
+
+#### Homepage (Logged In)
+
+- **Banner Section**: 
+  - Includes a search bar to quickly find books or reviews.
+  
+- **Call to Action**:
+  - Located at the bottom of the page, inviting users to write their own reviews with a **Write a Review** button.
+  - A message encouraging users to share their thoughts and help fellow readers.
+
+- **Navigation Bar**:
+ - A new **My Reviews** link has been added to the navigation, allowing users to view a dedicated page with all of their posted reviews.
+
+
+This logged-in homepage is designed to keep users engaged by showcasing the latest content and encouraging them to participate in the community.
+
+--- 
+
+### My Reviews Page
+
+The **My Reviews Page** allows logged-in users to view all the posts they have written.
+
+
+- **Page Title**: Displays "My Reviews" to indicate the current page, followed by the user's name and their posts.
+  
+- **Posts List**: 
+  - If there are no reviews yet, a message appears saying "Currently no posts to display," along with a **Write a Review** button to encourage users to write their first review.
+  - If the user has posts, they are displayed in a grid format, each featuring:
+    - The book title and cover image.
+    - A brief excerpt of the review.
+    - The publication date and the option to read the full review.
+    - **Edit/Delete** icons, allowing users to modify or remove their reviews.
+  
+- **Pagination**: 
+  - Pagination controls allow users to navigate through multiple pages of their reviews if they have posted many.
+  
+- **Write a Review Button**: 
+  - A clear button that takes users directly to the **Write a Review** page if they want to create new content.
+
+- **Navigation Bar**:
+  - Provides easy access to **Home**, **My Reviews**, **Reviews**, and **About** sections.
+  - Includes a **Write a Review** button and a **Logout** button for managing account access.
+
+- **Footer**: 
+This page helps users manage their posted reviews and provides options for creating new reviews or editing/deleting existing ones.
+
+
+---
+
+### Login Page
+
+The **Login Page** allows returning users to sign in to their accounts and access the platform’s features.
+
+- **Welcome Message**: A friendly welcome back message greets users, making the login process more personable.
+- **Login Form**: Users are prompted to enter their:
+  - **Email**: The email address associated with their account.
+  - **Password**: The corresponding account password.
+- **Continue Button**: A clear and prominent button for submitting login credentials and signing in.
+- **Sign-Up Option**: For new users, a link to the **Sign-Up** page is provided below the form to encourage account creation.
+- **Forgot Password Option**: A link for users who may have forgotten their password, allowing them to recover or reset it.
+- **Navigation Bar**: Provides easy access to **Home**, **Reviews**, and **About** sections, with **Login** and **Sign-Up** buttons visible at the top.
+
+---
+
+### Sign-Up Page
+
+The **Sign-Up Page** allows new users to create an account on the platform.
+
+- **Welcome Message**: A friendly greeting to welcome new users.
+- **Sign-Up Form**: A simple form for new users to create their account by entering:
+  - **Username**: The desired username for the account.
+  - **First Name** and **Last Name**: User's personal details.
+  - **E-mail**: A valid email address for account verification.
+  - **Password** and **Password Confirmation**: Secure password entry with confirmation.
+- **Continue Button**: A clear button to submit the sign-up form and create the account.
+- **Navigation Bar**: Provides easy access to **Home**, **Reviews**, and **About** sections, with **Login** and **Sign-Up** buttons prominently displayed.
+
+---
+
+### Post Review Page
+
+The **Post Review Page** presents the full content of a selected review.
+
+- **Full Review Content**: Displays the complete review written by the user, including detailed insights and opinions on the book.
+- **Author Info**: Shows the author’s name and the date the review was published.
+- **Comments Section**: Allows users to read and leave comments on the review.
+- **Sign-In Prompt**: If not signed in, users are prompted to log in to leave a comment.
+
+---
+
+### Profile Page
+
+The **Profile Page** showcases the user's public information and all of their posted reviews.
+
+- **Profile Information**: Displays the user’s profile picture, username, and a brief bio.
+- **Location**: Displays the user’s location if provided.
+- **List of Reviews**: Shows all the reviews the user has posted, with links to view each review in full.
+
+#### Profile Page (Logged In)
+
+Allows users to view and manage their personal information and see a list of their posted reviews.
+
+- **Profile Information**: 
+  - Shows the user’s location if provided.
+  - An edit icon next to the bio allows users to update their profile details.
+  
+- **List of Reviews**:
+  - Displays a list of all the reviews the user has posted.
+  - Each review is clickable, directing the user to the full review details.
+  
+- **Navigation Bar**:
+  - Provides easy access to **Home**, **My Reviews**, **Reviews**, and **About** sections.
+  - Includes a **Write a Review** button to create new posts.
+  - Shows the **Logout** button for users to sign out of their account.
+  
+  
+This profile page is designed to give users an overview of their activity and easy access to review management and account settings.
+
+#### Update Profile Page
+
+The **Update Profile Page** allows users to edit their personal information and update their profile.
+
+#### Features:
+- **Profile Picture Upload**: Users can choose and upload a new profile picture.
+- **Personal Details**: Fields to edit first name, last name, username, and bio.
+- **Publish Button**: A button to save and publish the updated profile information.
+
+---
+
+### Write a Review Page
+
+The **Write a Review Page** provides users with a form to submit new book reviews.
+
+- **Title Field**: Users can enter the title of their review.
+- **Post Image Upload**: Allows users to upload an image related to the book (e.g., cover).
+- **Excerpt Field**: A short description or teaser for the review.
+- **Content Field**: The main body of the review where users provide their thoughts and analysis.
+- **Publish Button**: A button to submit the review and publish it on the platform.
+
+---
+
+### About Page
+
+The **About Page** introduces **BookView** and its purpose, welcoming users to the community.
+
+- **Welcome Message**: A brief description of the platform’s mission, inviting book lovers to join the community, share reviews, and discuss their favorite books.
+- **Call to Action**: Encourages users to sign up and participate in discussions about literature.
