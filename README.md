@@ -44,3 +44,52 @@ BookView is designed with simplicity and community engagement in mind, providing
 
 - **Easily Navigate the Platform**:  
   I want a simple and intuitive interface so that I can quickly find what I'm looking for, whether it's browsing reviews, creating a post, or interacting with others.
+
+![image](https://github.com/user-attachments/assets/6ec47717-ad2c-4d2b-a593-fdd09a0a4082)
+
+## Color Scheme
+
+The BookView color palette creates a clean, balanced, and user-friendly design, focusing on visual clarity and minimalism.
+
+**Neutral Base Colors**
+
+- Light Gray, Neutral Gray, Off White: Clean background for a spacious, uncluttered look.
+
+**Accent Colors**
+
+ - Bright Blue (#546CFF): Interactive elements like buttons and links.
+
+ - Deep Purple (#1D1141): Headers, navigation bars, and important content.
+
+ - Muted Gray (#888888): Secondary information.
+
+**Contrasting Dark Color**
+
+- Dark Charcoal (#2B2B25): Emphasizes headers and key text for readability.
+
+**Design Approach**
+
+- Minimalist Palette: Limited colors for a clean design, focusing on content.
+
+- Accessibility: High contrast for readability.
+
+## Typography
+
+For the visual identity of this project, I have selected two fonts to maintain a consistent and professional look:
+
+- **The Bold Font**: Used for the **logo**. It gives a strong and distinctive personality.
+  - Font URL: [The Bold Font](https://fonts.cdnfonts.com/css/the-bold-font)
+
+- **Lato**: Used for the **body text** to ensure readability and clarity across various devices and screen sizes.
+  - Font URL: [Lato](https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap)
+
+These fonts help create a modern, cohesive style for the branding and readability of the project.
+
+## Wireframes
+
+For designing the wireframes of this project, I chose **Figma** due to its powerful, visual, and collaborative design capabilities. Figma allows for:
+
+- **Visual-first approach**: Its intuitive, drag-and-drop interface makes it easier to create wireframes with precision and clarity.
+- **Cloud-based**: Access the wireframes from anywhere, without worrying about software installation.
+
+You can view the project wireframes in my [Figma project](#). *(Replace `#` with the actual Figma link when available.)*
