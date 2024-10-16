@@ -1,4 +1,4 @@
-<h1 align="center"> BookView Website - Code Institute Project 4</h1>
+<h1 align="center"> BookView - Code Institute Project 4</h1>
 
 <a href="https://bookview-1fe2bb34917a.herokuapp.com/"><strong>BookView</a></strong> is a full-stack blog platform built using Django that allows users to create, share, and engage with book reviews. It provides a space for book lovers to express their thoughts and opinions, explore new literary works, and interact with a community of like-minded readers. The platform combines robust back-end functionality with an intuitive front-end interface, making it easy for users to contribute reviews and comment on posts.
 
@@ -92,4 +92,4 @@ For designing the wireframes of this project, I chose **Figma** due to its power
 - **Visual-first approach**: Its intuitive, drag-and-drop interface makes it easier to create wireframes with precision and clarity.
 - **Cloud-based**: Access the wireframes from anywhere, without worrying about software installation.
 
-You can view the project wireframes in my [Figma project](#). *(Replace `#` with the actual Figma link when available.)*
+You can view the project wireframes or contribute to the design directly in my [Figma project](https://www.figma.com/design/rzCnEerXNQuigsn4g0sbp4/Untitled?node-id=1-2&node-type=frame).
